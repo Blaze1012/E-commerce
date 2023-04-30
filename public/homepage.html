@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="homepage.css">
+    <title>Bootstrap Example</title>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="homepage.js"></script>
+    
+  </head>
+  <body class="p-3 m-0 border-0 bd-example">
+
+    <!-- Example Code -->
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/index.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onClick="location.reload()">Our Products</a>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="currentUser">
+                User
+              </a>
+              <ul class="dropdown-menu">
+                <div id ='user-dropdown'>
+                <li><a class="dropdown-item" href="#" id="logout">Logout</a></li>
+                <li><a class="dropdown-item" href="order-summary.html" id="myorders">My Orders</a></li>
+                <li><a class="dropdown-item" href="/cart.html">My Cart</a></li>
+              </div>
+                <!-- <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+              </ul>
+            </li>
+          
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- End Example Code -->
+
+   
+
+    <main class="container main">
+
+
+      <div id="modal">
+      
+      </div>
+
+
+      <section class="py-5 text-center container">
+          <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+              <h1 class="fw-light">Tutorial Merchandise</h1>
+              <p class="lead text-muted">The best tutorial guides that money can buy!</p>
+            </div>
+          </div>
+      </section>
+
+
+
+      <div class="album py-5 bg-light">
+          <div class="container">
+              <div class="row" id="card-container">
+                  <!--More cards will be add here-->
+              </div>
+          </div>
+      </div>
+  </main>
+
+  <footer class="mt-auto text-muted py-5">
+    <div class="container">
+      <p class="float-end mb-1">
+        <a href="#">Back to top</a>
+      </p>
+      <p class="mb-1">Tutorial made for and by <a href="https://www.webtutsplus.com">WebTutsPlus</a>.   </p>
+    </div>
+</footer>
+
+  </body>
+</html>
